@@ -10,7 +10,7 @@ public class Calculator {
     BinaryOperator<Integer> multiply = (x, y) -> x * y;
     BinaryOperator<Integer> divide = (x, y) -> {
         if (y == 0) {
-            System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ.");
+            System.out.println("Деление на ноль даёт бесконечность. Будет возвращён нуль.");
             return 0;
         } else return x / y;
     };
